@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="Obm%~{:upb!#4mJ*Jria">Player</variable><variable type="KIND_SpriteKind" id="-bJs?(wLw9@ck.0,(BcI">Projectile</variable><variable type="KIND_SpriteKind" id="a*H[gB]1i9[aLSkbXY,4">Food</variable><variable type="KIND_SpriteKind" id="?Fh%/|X}P;WkiOO[5?cj">Enemy</variable><variable id="meTyg;HS-B_5~KC/JF5$">mySprite</variable><variable id="3^l=e+l6:~9?S32iXY11">mySprite2</variable><variable id="zDuEMYr;3R@zipElW9C-">upsider</variable><variable id="j=t0bq?OgCQ(6{t66lDc">downsider</variable></variables><block type="pxt-on-start" id="tX_NepL45%NAkLZsw0-/" x="0" y="0"><statement name="HANDLER"><block type="tilemap_loadMap" id="{6l]8hfL+8i[w1^tl4WG"><value name="map"><shadow type="create_overworld_map" id="m#V=ZL]DS:z0i2EgHXWP"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></shadow></value><next><block type="variables_set" id="4m3}K+=yIO2NKRDRD,2Z"><field name="VAR" id="zDuEMYr;3R@zipElW9C-">upsider</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="6_4+UINGpBOVa-Jc?5Fd"><value name="img"><shadow type="screen_image_picker" id="CV!}`uNiMQ/2mJCHBSl:"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 7 7 7 7 7 7 7 7 . . . . 
+. . . . 7 7 7 7 7 7 7 7 . . . . 
+. . . . . 7 7 7 7 7 7 . . . . . 
+. . . . . 7 7 7 7 7 7 . . . . . 
+. . . . . 7 7 7 7 7 . . . . . . 
+. . . . . . 7 7 7 . . . . . . . 
+. . . . . . 7 7 7 . . . . . . . 
+. . . . . . . 7 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"CV!}`uNiMQ/2mJCHBSl:"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="dnl(=3+V@aDni_:2.iHZ"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="variables_set" id="Di8=@!|hqryL,Uz1;NZ%"><field name="VAR" id="j=t0bq?OgCQ(6{t66lDc">downsider</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="2kXq#u/2OOLR42~,z[IX"><value name="img"><shadow type="screen_image_picker" id="]TRxqN=(Y4I.q.F(=7Jv"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . 6 . . . . . . . . 
+. . . . . . 6 6 6 . . . . . . . 
+. . . . . 6 6 6 6 6 . . . . . . 
+. . . . . 6 6 6 6 6 . . . . . . 
+. . . . 6 6 6 6 6 6 . . . . . . 
+. . . 6 6 6 6 6 6 6 6 6 . . . . 
+. . . 6 6 6 6 6 6 6 6 6 . . . . 
+. . . 6 6 6 6 6 6 6 6 6 6 . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"]TRxqN=(Y4I.q.F(=7Jv"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="BEH4Qcqhriw=x?;z`%;g"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="Sprite_blockCombine_set" id="kP1{qrYW8DR2,Mj0lXuO"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="c@XO[DxBPinC0@SUV0pK"><field name="VAR" id="zDuEMYr;3R@zipElW9C-">upsider</field></block></value><value name="value"><shadow type="math_number" id="a29ZfG.MT)DHc,9?qFJU"><field name="NUM">-200</field></shadow></value><next><block type="Sprite_blockCombine_set" id="!F$Om/DdY-MC=mauda6C"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="Z}7_0PjJ@0lhyB(Sjf/P"><field name="VAR" id="j=t0bq?OgCQ(6{t66lDc">downsider</field></block></value><value name="value"><shadow type="math_number" id="E+v[H(nHkjyxjnxNbzN3"><field name="NUM">200</field></shadow></value><next><block type="game_control_sprite" id="xXMl{~S-MC+diSt0oN]M"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="2.@u(yin%+iy[/;n(W5|"><field name="VAR" id="zDuEMYr;3R@zipElW9C-">upsider</field></block></value><next><block type="game_control_sprite" id="w.j+mX{i=k:NO|~fX{D$"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="az^2Pyp:|,[|k+4b!Xr3"><field name="VAR" id="j=t0bq?OgCQ(6{t66lDc">downsider</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>

@@ -15,10 +15,10 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (upsider.isHittingTile(CollisionDirection.Top)) {
-        upsider.vy += 80
+        upsider.vy += 100
     }
     if (downsider.isHittingTile(CollisionDirection.Bottom)) {
-        downsider.vy += -80
+        downsider.vy += -100
     }
 })
 scene.onOverlapTile(SpriteKind.item, assets.tile`myTile1`, function (sprite, location) {
@@ -52,20 +52,20 @@ upsider = sprites.create(img`
 downsider = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . 6 . . . . . . . . 
-    . . . . . . 6 6 6 . . . . . . . 
-    . . . . . 6 6 6 6 6 . . . . . . 
-    . . . . . 6 6 6 6 6 . . . . . . 
-    . . . . 6 6 6 6 6 6 . . . . . . 
-    . . . 6 6 6 6 6 6 6 6 6 . . . . 
-    . . . 6 6 6 6 6 6 6 6 6 . . . . 
-    . . . 6 6 6 6 6 6 6 6 6 6 . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
+    . . . . . . . 5 . . . . . . . . 
+    . . . . . . 5 4 5 . . . . . . . 
+    . . . . . 5 5 5 5 5 . . . . . . 
+    . . . . . . d d d . . . . . . . 
+    . . . . . . . d . . . . . . . . 
+    . . . . . d 2 2 2 d . . . . . . 
+    . . . . d . 2 a 2 . d . . . . . 
+    . . . . d . 2 a 2 . d . . . . . 
+    . . . . 2 . d d d . 2 . . . . . 
+    . . . . . . 2 8 2 . . . . . . . 
+    . . . . . . d . d . . . . . . . 
+    . . . . . . c . c . . . . . . . 
+    . . . . . . d . d . . . . . . . 
+    . . . . . a a . a . . . . . . . 
     `, SpriteKind.Player)
 upsider.ay = -200
 downsider.ay = 200
